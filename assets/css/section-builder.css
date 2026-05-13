@@ -1,0 +1,16 @@
+/* Section Builder v2 — Pattern-based */
+/* Gutenberg blocks มี CSS ของตัวเอง — ไฟล์นี้แค่ section wrapper + utilities */
+
+.sb-main { width: 100%; }
+
+/* Section wrapper */
+.sb-section { position: relative; }
+.sb-section + .sb-section { /* gap between sections if needed */ }
+
+/* Preview mode */
+.sb-preview { background: #fff; }
+
+/* Responsive visibility (ใช้ได้ถ้าเพิ่ม class จาก overrides) */
+@media (min-width: 1025px) { .sb-hide-desktop { display: none !important; } }
+@media (min-width: 768px) and (max-width: 1024px) { .sb-hide-tablet { display: none !important; } }
+@media (max-width: 767px) { .sb-hide-mobile { display: none !important; } }
